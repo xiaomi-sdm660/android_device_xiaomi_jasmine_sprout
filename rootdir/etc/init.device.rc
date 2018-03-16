@@ -25,6 +25,9 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
+on post-fs
+    wait_for_prop vendor.sys.listeners.registered true
+
 on boot
 # Set permission for double tap to wake support
     chmod 0660 /proc/nvt_wake_gesture
