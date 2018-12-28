@@ -29,8 +29,7 @@ DEVICE_PATH := device/xiaomi/jasmine
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-	$(DEVICE_PATH)/overlay \
-	$(DEVICE_PATH)/overlay-lineage
+	$(DEVICE_PATH)/overlay
 
 # A/B
 AB_OTA_UPDATER := true

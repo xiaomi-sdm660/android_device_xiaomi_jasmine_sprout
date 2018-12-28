@@ -22,5 +22,5 @@
 #
 
 for var in eng user userdebug; do
-    add_lunch_combo lineage_jasmine-$var
+    add_lunch_combo aosp_jasmine-$var
 done
