@@ -1,7 +1,7 @@
 [
  {
-   "repository": "android_vendor_xiaomi_sdm660",
-   "target_path": "vendor/xiaomi/sdm660"
+   "repository": "android_vendor_xiaomi_jasmine",
+   "target_path": "vendor/xiaomi/jasmine"
  },
  {
    "repository": "android_device_xiaomi_sdm660-common",

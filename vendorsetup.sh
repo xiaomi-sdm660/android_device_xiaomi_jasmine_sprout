@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 CarbonROM
+# Copyright (C) 2018 LineageOS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,6 +21,6 @@
 # definition file).
 #
 
- add_lunch_combo havoc_jasmine-eng
- add_lunch_combo havoc_jasmine-userdebug
- add_lunch_combo havoc_jasmine-user
+for var in eng user userdebug; do
+    add_lunch_combo lineage_jasmine-$var
+done

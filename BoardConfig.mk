@@ -51,9 +51,5 @@ BOARD_ROOT_EXTRA_FOLDERS := persist
 # Vendor Security patch level
 VENDOR_SECURITY_PATCH := 2018-09-01
 
-# Vendor init
-TARGET_INIT_VENDOR_LIB := libinit_jasmine
-TARGET_RECOVERY_DEVICE_MODULES := libinit_jasmine
-
 # WLAN MAC
 WLAN_MAC_SYMLINK := true

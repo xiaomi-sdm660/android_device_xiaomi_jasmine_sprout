@@ -29,7 +29,8 @@ DEVICE_PATH := device/xiaomi/jasmine
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-	 $(DEVICE_PATH)/overlay
+	$(DEVICE_PATH)/overlay \
+	$(DEVICE_PATH)/overlay-lineage
 
 # A/B
 AB_OTA_UPDATER := true
@@ -68,7 +69,7 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_PACKAGES += \
 	android.hardware.boot@1.0-impl \
 	android.hardware.boot@1.0-service \
-	bootctrl.sdm660 \
+	bootctrl.sdm660
 
 PRODUCT_STATIC_BOOT_CONTROL_HAL := \
 	bootctrl.sdm660 \
@@ -84,10 +85,6 @@ PRODUCT_PACKAGES += \
 # Device properties
 $(call inherit-product, $(DEVICE_PATH)/device_prop.mk)
 
-# Init
- PRODUCT_PACKAGES += \
- 	libinit_jasmine
-
 # Keylayout
 PRODUCT_COPY_FILES += \
 	$(DEVICE_PATH)/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl \
@@ -95,7 +92,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
  PRODUCT_PACKAGES += \
-	 android.hardware.light@2.0-service.xiaomi_jasmine
+	android.hardware.light@2.0-service.xiaomi_jasmine
 
 # Media
 PRODUCT_COPY_FILES += \
