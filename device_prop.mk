@@ -38,22 +38,20 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
-	persist.bokeh.switch.lux=290 \
-	persist.camera.depth.focus.cb=0 \
-	persist.camera.expose.aux=1 \
-	persist.camera.imglib.usefdlite=1 \
-	persist.camera.isp.clock.optmz=0 \
-	persist.camera.isp.turbo=1 \
-	persist.camera.linkpreview=0 \
-	persist.camera.mainswitch.threshold=419 \
-	persist.camera.set.afd=4 \
-	persist.camera.stats.test=0 \
-	persist.imx376_sunny.low.lux=290 \
-	persist.imx376_sunny.light.lux=275 \
-	persist.imx376_ofilm.low.lux=290 \
-	persist.imx376_ofilm.light.lux=275 \
-	persist.sys.exif.make=Xiaomi \
-	persist.sys.exif.model=MI A2 \
+	persist.vendor.camera.preview.ubwc=0 \
+	persist.vendor.camera.stats.test=5 \
+	persist.vendor.camera.depth.focus.cb=0 \
+	persist.vendor.camera.isp.clock.optmz=0 \
+	persist.vendor.camera.linkpreview=0 \
+	persist.vendor.camera.isp.turbo=1 \
+	persist.vendor.camera.imglib.usefdlite=1 \
+	persist.vendor.camera.exif.make=Xiaomi \
+	persist.vendor.camera.exif.model=Mi A2 \
+	persist.vendor.imx376_sunny.low.lux=290 \
+	persist.vendor.imx376_sunny.light.lux=275 \
+	persist.vendor.imx376_ofilm.low.lux=290 \
+	persist.vendor.imx376_ofilm.light.lux=275 \
+	persist.vendor.bokeh.switch.lux=290 \
 	persist.radio.VT_CAM_INTERFACE=2
 
 # Dual SIM
