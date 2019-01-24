@@ -246,11 +246,11 @@
             <name>ISap</name>
             <instance>slot1</instance>
             <instance>slot2</instance>
+        </interface>
         <fqname>@1.2::IRadio/slot1</fqname>
         <fqname>@1.2::IRadio/slot2</fqname>
         <fqname>@1.2::ISap/slot1</fqname>
         <fqname>@1.2::ISap/slot2</fqname>
-        </interface>
     </hal>
     <hal format="hidl">
         <name>android.hardware.radio.config</name>
