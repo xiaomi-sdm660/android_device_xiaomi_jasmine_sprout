@@ -80,6 +80,36 @@
         <item>255</item>
     </integer-array>
 
+    <integer-array name="config_autoBrightnessDisplayValuesNits">
+        <item>8</item>
+        <item>24</item>
+        <item>46</item>
+        <item>64</item>
+        <item>86</item>
+        <item>185</item>
+        <item>260</item>
+        <item>313</item>
+        <item>344</item>
+        <item>397</item>
+        <item>439</item>
+        <item>542</item>
+    </integer-array>
+
+    <integer-array name="config_screenBrightnessNits">
+        <item>8</item>
+        <item>12</item>
+        <item>25</item>
+        <item>37</item>
+        <item>86</item>
+        <item>185</item>
+        <item>260</item>
+        <item>313</item>
+        <item>344</item>
+        <item>397</item>
+        <item>439</item>
+        <item>542</item>
+    </integer-array>
+
     <!-- Screen brightness used to dim the screen when the user activity
          timeout expires.  May be less than the minimum allowed brightness setting
          that can be set by the user. -->
