@@ -23,4 +23,4 @@
 
 # inherit MI A2 HAVOC device config
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_jasmine.mk
+    $(LOCAL_DIR)/aosp_jasmine_sprout.mk
