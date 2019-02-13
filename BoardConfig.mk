@@ -24,7 +24,7 @@
 include device/xiaomi/sdm660-common/PlatformConfig.mk
 
 # Device Path
-DEVICE_PATH := device/xiaomi/jasmine
+DEVICE_PATH := device/xiaomi/jasmine_sprout
 
 # A/B
 AB_OTA_UPDATER := true
