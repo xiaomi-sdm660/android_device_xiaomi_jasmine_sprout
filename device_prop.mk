@@ -94,7 +94,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.vendor.imx376_ofilm.light.lux=275 \
 	persist.vendor.bokeh.switch.lux=290 \
 	persist.vendor.camera.exif.make=Xiaomi \
-	persist.vendor.camera.exif.model=MI A2
+	persist.vendor.camera.exif.model=MI A2 \
+	persist.vendor.camera.HAL3.enabled=1
 
 # Dual SIM
 PRODUCT_PROPERTY_OVERRIDES += \
