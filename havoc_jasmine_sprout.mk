@@ -20,8 +20,10 @@
 # included in a build is to use PRODUCT_PACKAGES in a product
 # definition file).
 #
+
 #TWRP
 BUILD_TWRP := true
+
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/jasmine_sprout/device.mk)
 
@@ -39,4 +41,4 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_PLATFORM := SDM660
 PRODUCT_NAME := havoc_jasmine_sprout
 PRODUCT_DEVICE := jasmine_sprout
-PRODUCT_MODEL := MI A2
+PRODUCT_MODEL := Mi A2
