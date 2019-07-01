@@ -21,6 +21,6 @@
 # definition file).
 #
 
- add_lunch_combo havoc_jasmine_sprout-eng
- add_lunch_combo havoc_jasmine_sprout-userdebug
- add_lunch_combo havoc_jasmine_sprout-user
+ add_lunch_combo aosip_jasmine_sprout-eng
+ add_lunch_combo aosip_jasmine_sprout-userdebug
+ add_lunch_combo aosip_jasmine_sprout-user
