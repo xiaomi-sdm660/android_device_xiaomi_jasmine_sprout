@@ -21,6 +21,6 @@
 # definition file).
 #
 
-# inherit MI A2 HAVOC device config
+# inherit MI A2 AOSIP device config
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_jasmine_sprout.mk
+    $(LOCAL_DIR)/aosip_jasmine_sprout.mk
