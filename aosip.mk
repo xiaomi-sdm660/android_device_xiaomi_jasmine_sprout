@@ -26,16 +26,16 @@ BUILD_TWRP := true
 $(call inherit-product, device/xiaomi/jasmine_sprout/device.mk)
 
 # Inherit from Havoc custom product configuration
-$(call inherit-product, vendor/havoc/config/common.mk)
+$(call inherit-product, vendor/aosip/config/common.mk)
 
 PRODUCT_PROPERTY_OVERRIDES += \
-	ro.havoc.maintainer=rcstar6696
+	ro.aosip.maintainer=cloude
 
 # Device identifier
 PRODUCT_BRAND := xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_PLATFORM := SDM660
-PRODUCT_NAME := havoc_jasmine_sprout
+PRODUCT_NAME := aosip_jasmine_sprout
 PRODUCT_DEVICE := jasmine_sprout
 PRODUCT_MODEL := Mi A2
 
