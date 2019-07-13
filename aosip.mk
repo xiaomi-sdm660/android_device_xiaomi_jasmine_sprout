@@ -21,7 +21,18 @@
 # definition file).
 #
 
-# inherit MI A2 AOSiP device config
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosip_jasmine_sprout.mk
+# Inherit device configuration
+$(call inherit-product, device/xiaomi/jasmine_sprout/device.mk)
 
+# Inherit from AOSiP custom product configuration
+$(call inherit-product, vendor/aosip/config/common.mk)
+
+TARGET_VENDOR_PRODUCT_NAME := jasmine_sprout
+
+# Device identifier
+PRODUCT_BRAND := Xiaomi
+PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_PLATFORM := SDM660
+PRODUCT_NAME := aosip_jasmine_sprout
+PRODUCT_DEVICE := jasmine_sprout
+PRODUCT_MODEL := MI A2
