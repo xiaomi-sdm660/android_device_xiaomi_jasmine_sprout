@@ -49,7 +49,7 @@ BOARD_VENDOR_PLATFORM := xiaomi-sdm660
 BOARD_ROOT_EXTRA_FOLDERS := persist
 
 # Vendor Security patch level
-VENDOR_SECURITY_PATCH := 2018-09-01
+VENDOR_SECURITY_PATCH := 2018-06-05
 
 # Vendor init
 TARGET_INIT_VENDOR_LIB := libinit_jasmine_sprout
@@ -57,3 +57,9 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_jasmine_sprout
 
 # WLAN MAC
 WLAN_MAC_SYMLINK := true
+
+
+# TWRP Support
+ifeq ($(BUILD_TWRP),true)
+include $(DEVICE_PATH)/twrp.mk
+endif
