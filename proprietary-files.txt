@@ -26,9 +26,6 @@ vendor/lib64/libaudcal.so
 vendor/lib64/libaudioalsa.so
 -vendor/lib64/libaudioparsers.so
 vendor/lib64/libqtigef.so
-vendor/lib64/soundfx/libasphere.so
-vendor/lib64/soundfx/libqcbassboost.so
-vendor/lib64/soundfx/libqcvirt.so
 
 # Audio ACDB
 vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
