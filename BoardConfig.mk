@@ -42,6 +42,9 @@ TARGET_KERNEL_CONFIG := jasmine-perf_defconfig
 # Manifest
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
+# Recovery
+TARGET_PREBUILT_RECOVERY_RAMDISK_CPIO := $(DEVICE_PATH)/twrp/ramdisk-recovery.cpio
+
 # Platform
 BOARD_VENDOR_PLATFORM := xiaomi-sdm660
 
@@ -50,8 +53,3 @@ VENDOR_SECURITY_PATCH := 2018-06-05
 
 # WLAN MAC
 WLAN_MAC_SYMLINK := true
-
--include device/twrp/jasmine_sprout/twrp.mk
-
-# TWRP Support
-include $(DEVICE_PATH)/twrp.mk
