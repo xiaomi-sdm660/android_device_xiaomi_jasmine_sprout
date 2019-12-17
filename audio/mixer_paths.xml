@@ -2014,6 +2014,19 @@
     </path>
 
     <!-- These are actual sound device specific mixer settings -->
+
+    <!-- Elclark -->
+    <path name="stereomod">
+        <ctl name="INT0_MI2S_RX Channels" value="Two" />
+        <ctl name="RX1 MIX1 INP1" value="RX1" />
+        <ctl name="RDAC2 MUX" value="RX1" />
+        <ctl name="RX2 Digital Volume" value="94" />
+        <ctl name="EAR PA Gain" value="POS_6_DB" />
+        <ctl name="EAR_S" value="Switch" />
+        <!--ctl name="HPHL" value="19" />
+        <ctl name="HPHR" value="15" /-->
+    </path>
+
     <path name="adc1">
         <ctl name="ADC1 Volume" value="6" />
         <ctl name="DEC1 MUX" value="ADC1" />
@@ -2066,6 +2079,7 @@
     </path>
 
     <path name="speaker">
+		<path name="stereomod"/>
         <!-- ctl name="PowerCtrl" value="1" /-->
     </path>
 
