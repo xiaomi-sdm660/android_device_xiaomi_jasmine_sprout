@@ -27,105 +27,107 @@ $(call inherit-product, device/xiaomi/sdm660-common/sdm660.mk)
 # Device Path
 DEVICE_PATH := device/xiaomi/jasmine_sprout
 
-# Soong
-PRODUCT_SOONG_NAMESPACES += \
-    $(DEVICE_PATH)
-
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-	 $(DEVICE_PATH)/overlay
-
 # A/B
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
-	boot \
-	system \
-	vendor
+    boot \
+    system \
+    vendor
 
 AB_OTA_POSTINSTALL_CONFIG += \
-	RUN_POSTINSTALL_system=true \
-	POSTINSTALL_PATH_system=system/bin/otapreopt_script \
-	FILESYSTEM_TYPE_system=ext4 \
-	POSTINSTALL_OPTIONAL_system=true
+    RUN_POSTINSTALL_system=true \
+    POSTINSTALL_PATH_system=system/bin/otapreopt_script \
+    FILESYSTEM_TYPE_system=ext4 \
+    POSTINSTALL_OPTIONAL_system=true
 
 PRODUCT_PACKAGES += \
-	otapreopt_script
+    otapreopt_script
 
 # Audio
 PRODUCT_COPY_FILES += \
-	$(DEVICE_PATH)/audio/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec.xml \
-	$(DEVICE_PATH)/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
+    $(DEVICE_PATH)/configs/audio/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec.xml \
+    $(DEVICE_PATH)/configs/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
 
-PRODUCT_CHARACTERISTICS := nosdcard
-
 # Boot control
 PRODUCT_PACKAGES += \
-	android.hardware.boot@1.0-impl \
-	android.hardware.boot@1.0-service \
-	bootctrl.sdm660 \
-        android.hardware.boot@1.0-impl.recovery \
-        bootctrl.sdm660.recovery
+    android.hardware.boot@1.0-impl \
+    android.hardware.boot@1.0-service \
+    bootctrl.sdm660 \
+    android.hardware.boot@1.0-impl.recovery \
+    bootctrl.sdm660.recovery
 
+# Boot control debug
 PRODUCT_PACKAGES_DEBUG += \
-        bootctl
+    bootctl
 
 # Consumerir
 PRODUCT_PACKAGES += \
-	android.hardware.ir@1.0-impl \
-	android.hardware.ir@1.0-service
+    android.hardware.ir@1.0-impl \
+    android.hardware.ir@1.0-service
 
 # Device properties
 $(call inherit-product, $(DEVICE_PATH)/device_prop.mk)
 
 # Media
 PRODUCT_COPY_FILES += \
-	$(DEVICE_PATH)/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
+    $(DEVICE_PATH)/configs/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
+
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(DEVICE_PATH)/overlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
-	frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
-	frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
+    frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
+    frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
 
 # Keylayout
 PRODUCT_COPY_FILES += \
-	$(DEVICE_PATH)/configs/keylayout/sdm660-snd-card_Button_Jack.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/sdm660-snd-card_Button_Jack.kl
+    $(DEVICE_PATH)/configs/keylayout/sdm660-snd-card_Button_Jack.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/sdm660-snd-card_Button_Jack.kl
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-	init.device.rc
+    init.device.rc
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# SD Card
+PRODUCT_CHARACTERISTICS := nosdcard
+
 # Sensors
 PRODUCT_COPY_FILES += \
-	$(DEVICE_PATH)/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf
+    $(DEVICE_PATH)/configs/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf
+
+# Soong
+PRODUCT_SOONG_NAMESPACES += \
+    $(DEVICE_PATH)
 
 # Update engine
 PRODUCT_PACKAGES += \
-	update_engine \
-	update_engine_sideload \
-	update_verifier
+    update_engine \
+    update_engine_sideload \
+    update_verifier
 
 PRODUCT_HOST_PACKAGES += \
         brillo_update_payload
 
 PRODUCT_PACKAGES_DEBUG += \
-	update_engine_client
+    update_engine_client
 
 # Vibrator
 PRODUCT_PACKAGES += \
-	android.hardware.vibrator@1.0-impl \
-	android.hardware.vibrator@1.0-service
+    android.hardware.vibrator@1.0-impl \
+    android.hardware.vibrator@1.0-service
 
 # Watermark
 PRODUCT_COPY_FILES += \
-	$(DEVICE_PATH)/media/MIUI_DualCamera_watermark_A2.png:$(TARGET_COPY_OUT_VENDOR)/etc/MIUI_DualCamera_watermark.png
+    $(DEVICE_PATH)/configs/media/MIUI_DualCamera_watermark_A2.png:$(TARGET_COPY_OUT_VENDOR)/etc/MIUI_DualCamera_watermark.png
 
 # Verity
 PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/platform/soc/c0c4000.sdhci/by-name/system
