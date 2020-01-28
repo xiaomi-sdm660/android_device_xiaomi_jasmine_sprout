@@ -39,37 +39,6 @@ vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # Camera
-vendor/etc/camera/camera_config.xml
-vendor/etc/camera/female_bg.png
-vendor/etc/camera/female_icon.png
-vendor/etc/camera/lf_facerank_model.bin
-vendor/etc/camera/male_bg.png
-vendor/etc/camera/male_icon.png
-vendor/etc/camera/GpuKernelRepo.pb
-vendor/etc/camera/model_back.dlc
-vendor/etc/camera/model_front.dlc
-vendor/etc/camera/score_bg.png
-vendor/etc/camera/score_icon.png
-vendor/etc/camera/sdm_ys_32p_120_21_5_perturb50.bin
-vendor/etc/camera/wayne_imx376_ofilm_cn_back_ii_chromatix.xml
-vendor/etc/camera/wayne_imx376_ofilm_cn_front_ii_chromatix.xml
-vendor/etc/camera/wayne_imx376_ofilm_india_back_ii_chromatix.xml
-vendor/etc/camera/wayne_imx376_ofilm_india_front_ii_chromatix.xml
-vendor/etc/camera/wayne_imx376_sunny_cn_back_i_chromatix.xml
-vendor/etc/camera/wayne_imx376_sunny_cn_back_iii_chromatix.xml
-vendor/etc/camera/wayne_imx376_sunny_cn_front_i_chromatix.xml
-vendor/etc/camera/wayne_imx376_sunny_india_back_i_chromatix.xml
-vendor/etc/camera/wayne_imx376_sunny_india_back_iii_chromatix.xml
-vendor/etc/camera/wayne_imx376_sunny_india_front_i_chromatix.xml
-vendor/etc/camera/wayne_imx486_ofilm_cn_ii_chromatix.xml
-vendor/etc/camera/wayne_imx486_ofilm_india_ii_chromatix.xml
-vendor/etc/camera/wayne_imx486_sunny_cn_i_chromatix.xml
-vendor/etc/camera/wayne_imx486_sunny_cn_iii_chromatix.xml
-vendor/etc/camera/wayne_imx486_sunny_india_i_chromatix.xml
-vendor/etc/camera/wayne_imx486_sunny_india_iii_chromatix.xml
-vendor/etc/MIUI_DualCamera_watermark.png
-vendor/etc/MIUI_Time.ttf
-vendor/etc/Miui-Light.ttf
 vendor/lib/hw/camera.sdm660.so
 vendor/lib/libmmcamera_interface.so
 vendor/lib/libmmjpeg_interface.so
@@ -199,6 +168,35 @@ vendor/lib/libarcsoft_dualcam_refocus_rear_t.so
 vendor/lib/libarcsoft_dualcam_refocus_rear_w.so
 vendor/lib/libarcsoft_high_dynamic_range.so
 vendor/lib/libmmcamera_arcsoftbokeh_lib.so
+
+# Camera Configs
+vendor/etc/camera/camera_config.xml
+vendor/etc/camera/csidtg_camera.xml
+vendor/etc/camera/csidtg_chromatix.xml
+vendor/etc/camera/female_bg.png
+vendor/etc/camera/female_icon.png
+vendor/etc/camera/male_bg.png
+vendor/etc/camera/male_icon.png
+vendor/etc/camera/score_bg.png
+vendor/etc/camera/score_icon.png
+vendor/etc/camera/wayne_imx376_ofilm_cn_back_ii_chromatix.xml
+vendor/etc/camera/wayne_imx376_ofilm_cn_front_ii_chromatix.xml
+vendor/etc/camera/wayne_imx376_ofilm_india_back_ii_chromatix.xml
+vendor/etc/camera/wayne_imx376_ofilm_india_front_ii_chromatix.xml
+vendor/etc/camera/wayne_imx376_sunny_cn_back_i_chromatix.xml
+vendor/etc/camera/wayne_imx376_sunny_cn_back_iii_chromatix.xml
+vendor/etc/camera/wayne_imx376_sunny_cn_front_i_chromatix.xml
+vendor/etc/camera/wayne_imx376_sunny_india_back_i_chromatix.xml
+vendor/etc/camera/wayne_imx376_sunny_india_back_iii_chromatix.xml
+vendor/etc/camera/wayne_imx376_sunny_india_front_i_chromatix.xml
+vendor/etc/camera/wayne_imx486_ofilm_cn_ii_chromatix.xml
+vendor/etc/camera/wayne_imx486_ofilm_india_ii_chromatix.xml
+vendor/etc/camera/wayne_imx486_sunny_cn_i_chromatix.xml
+vendor/etc/camera/wayne_imx486_sunny_cn_iii_chromatix.xml
+vendor/etc/camera/wayne_imx486_sunny_india_i_chromatix.xml
+vendor/etc/camera/wayne_imx486_sunny_india_iii_chromatix.xml
+vendor/etc/MIUI_Time.ttf
+vendor/etc/Miui-Light.ttf
 
 # Camera Chromatix
 vendor/lib/libchromatix_wayne_imx376_ofilm_cn_back_ii_bokeh_preview.so
