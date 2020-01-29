@@ -173,6 +173,11 @@ vendor/lib/libmmcamera_arcsoftbokeh_lib.so
 vendor/etc/camera/camera_config.xml
 vendor/etc/camera/csidtg_camera.xml
 vendor/etc/camera/csidtg_chromatix.xml
+vendor/etc/camera/lf_facerank_model.bin
+vendor/etc/camera/GpuKernelRepo.pb
+vendor/etc/camera/model_back.dlc
+vendor/etc/camera/model_front.dlc
+vendor/etc/camera/sdm_ys_32p_120_21_5_perturb50.bin	
 vendor/etc/camera/female_bg.png
 vendor/etc/camera/female_icon.png
 vendor/etc/camera/male_bg.png
