@@ -20,30 +20,32 @@
 # included in a build is to use PRODUCT_PACKAGES in a product
 # definition file).
 #
-
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/jasmine_sprout/device.mk)
-
-# Inherit Carbon GSM telephony parts
-$(call inherit-product, vendor/carbon/config/gsm.mk)
-
-# Inherit Carbon product configuration
-$(call inherit-product, vendor/carbon/config/common.mk)
 
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# CarbonRom Maintainer
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.carbon.maintainer="Rcstar6696"
-
-# Build Fingerprint
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="jasmine-user 9 PKQ1.180904.001 V10.0.9.0.PDIMIXM release-keys"
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
+TARGET_GAPPS_ARCH := arm64
+IS_PHONE := true
+TARGET_INCLUDE_WIFI_EXT := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier
 PRODUCT_BRAND := xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := carbon_jasmine_sprout
+PRODUCT_NAME := derp_jasmine_sprout
 PRODUCT_DEVICE := jasmine_sprout
 PRODUCT_MODEL := Mi A2
+
+# Build Fingerprint
+PRODUCT_BUILD_PROP_OVERRIDES += \
+	PRIVATE_BUILD_DESC="jasmine-user 9 PKQ1.180904.001 V10.0.9.0.PDIMIXM release-keys"
+
+#TWRP
+BUILD_TWRP := true
+
+
