@@ -95,7 +95,7 @@ PRODUCT_PACKAGES += \
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+PRODUCT_AAPT_PREF_CONFIG := 430dpi
 
 # SD Card
 PRODUCT_CHARACTERISTICS := nosdcard
@@ -143,3 +143,7 @@ PRODUCT_DEVICE := jasmine_sprout
 PRODUCT_MODEL := Mi A2 (AOSP)
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
+
+# Wallpapers
+PRODUCT_PACKAGES += \
+   PixelLiveWallpaperPrebuilt
