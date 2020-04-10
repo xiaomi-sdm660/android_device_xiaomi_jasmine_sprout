@@ -14,10 +14,6 @@ vendor/lib/libaudioalsa.so
 vendor/lib/libdrc.so
 vendor/lib/libqtigef.so
 vendor/lib/libsurround_3mic_proc.so
-vendor/lib/soundfx/libasphere.so
-vendor/lib/soundfx/libqcbassboost.so
-vendor/lib/soundfx/libqcreverb.so
-vendor/lib/soundfx/libqcvirt.so
 vendor/lib64/libacdb-fts.so
 vendor/lib64/libacdbloader.so
 vendor/lib64/libacdbrtac.so
@@ -47,6 +43,7 @@ vendor/lib/lib_lowlight.so
 vendor/lib/libcdsprpc.so
 vendor/lib/libdepthmapwrapper.so
 vendor/lib/libflash_pmic.so
+vendor/lib/libft2vendor.so
 vendor/lib/libhal_dbg.so
 vendor/lib/libhdr_tm.so
 vendor/lib/libjpegdhw.so
@@ -129,7 +126,6 @@ vendor/lib/libsymphonypower.so
 vendor/lib/libSonyIMX376C3RmscLibrary.so
 vendor/lib/libSonyIMX376KRmscLibrary.so
 vendor/lib/libbase64.so
-vendor/lib/libgui_vendor.so
 vendor/lib64/libcdsprpc.so
 vendor/lib64/libhdr_tm.so
 vendor/lib64/libmmcamera2_frame_algorithm.so
@@ -177,7 +173,7 @@ vendor/etc/camera/lf_facerank_model.bin
 vendor/etc/camera/GpuKernelRepo.pb
 vendor/etc/camera/model_back.dlc
 vendor/etc/camera/model_front.dlc
-vendor/etc/camera/sdm_ys_32p_120_21_5_perturb50.bin	
+vendor/etc/camera/sdm_ys_32p_120_21_5_perturb50.bin
 vendor/etc/camera/female_bg.png
 vendor/etc/camera/female_icon.png
 vendor/etc/camera/male_bg.png
@@ -835,31 +831,12 @@ vendor/lib/libmmcamera_isp_snr47.so
 vendor/lib/libmmcamera_isp_sub_module.so
 
 # Consumerir
-vendor/lib/hw/consumerir.default.so
-vendor/lib64/hw/consumerir.default.so
+vendor/lib/hw/consumerir.default.so:vendor/lib/hw/consumerir.sdm660.so
+vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.sdm660.so
 
 # Display calibration
 vendor/etc/qdcm_calib_data_tianma_nt36672_fhd_video_mode_dsi_panel.xml
 vendor/etc/qdcm_calib_data_jdi_nt36672_fhd_video_mode_dsi_panel.xml
-
-# DRM
-vendor/bin/qseecomd
-vendor/lib/libQSEEComAPI.so
-vendor/lib/libsdedrm.so
-vendor/lib64/libdrmfs.so
-vendor/lib64/libdrmtime.so
-vendor/lib64/libGPreqcancel_svc.so
-vendor/lib64/libGPreqcancel.so
-vendor/lib64/libqisl.so
-vendor/lib64/libQSEEComAPI.so
-vendor/lib64/librpmb.so
-vendor/lib64/libsdedrm.so
-vendor/lib64/libsecureui_svcsock.so
-vendor/lib64/libsecureui.so
-vendor/lib64/libSecureUILib.so
-vendor/lib64/libssd.so
-vendor/lib64/libStDrvInt.so
-vendor/lib64/libtzdrmgenprov.so
 
 # Fingerprint firmware
 etc/firmware/goodixfp.b00:vendor/firmware/goodixfp.b00
@@ -887,7 +864,6 @@ vendor/bin/qfp-daemon
 vendor/etc/permissions/com.fingerprints.extension.xml
 vendor/framework/com.fingerprints.extension.jar
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
-vendor/lib64/hw/fingerprint.default.so
 vendor/lib64/hw/fingerprint.fpc.default.so
 vendor/lib64/hw/fingerprint.goodix.default.so
 vendor/lib64/com.fingerprints.extension@1.0.so
@@ -899,33 +875,19 @@ vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
 # Gatekeeper
-vendor/lib/hw/gatekeeper.sdm660.so
-vendor/lib64/hw/gatekeeper.sdm660.so
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
-vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
-vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
+vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
+vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
 # Keymaster
-vendor/lib/libkeymasterutils.so
-vendor/lib/libkeymasterprovision.so
-vendor/lib/libkeymasterdeviceutils.so
-vendor/lib/libqtikeymaster4.so
-vendor/lib64/libkeymasterutils.so
-vendor/lib64/libkeymasterprovision.so
-vendor/lib64/libkeymasterdeviceutils.so
-vendor/lib64/libqtikeymaster4.so
-
-# Keystore
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
-vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
 vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc
-vendor/lib/hw/keystore.sdm660.so
 vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so
-vendor/lib64/hw/keystore.sdm660.so
 vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
 
-# Thermal
+
+# Thermal (Configs)
 vendor/etc/thermal-engine-battery.conf
 vendor/etc/thermal-engine-battery2.conf
 vendor/etc/thermal-engine-gameing.conf
