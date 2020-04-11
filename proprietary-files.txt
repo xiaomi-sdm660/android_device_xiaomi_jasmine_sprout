@@ -35,6 +35,7 @@ vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # Camera
+vendor/etc/scve/facereco/gModel.dat
 vendor/lib/hw/camera.sdm660.so
 vendor/lib/libmmcamera_interface.so
 vendor/lib/libmmjpeg_interface.so
