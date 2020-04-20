@@ -107,6 +107,7 @@
         <device name="SND_DEVICE_IN_HEADSET_MIC" acdb_id="51"/>
         <device name="SND_DEVICE_IN_VOICE_SPEAKER_MIC" acdb_id="291"/>
         <device name="SND_DEVICE_IN_VOICE_HEADSET_MIC" acdb_id="307"/>
+        <device name="SND_DEVICE_IN_VOICE_REC_HEADSET_MIC" acdb_id="307"/>
         <device name="SND_DEVICE_IN_CAMCORDER_MIC" acdb_id="4"/>
         <device name="SND_DEVICE_IN_VOICE_DMIC" acdb_id="277"/>
         <device name="SND_DEVICE_IN_VOICE_SPEAKER_DMIC" acdb_id="293"/>
