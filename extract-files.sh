@@ -23,14 +23,18 @@ fi
 
 set -e
 
-# Required!
-export DEVICE=jasmine_sprout
-export DEVICE_COMMON=sdm660-common
-export VENDOR=xiaomi
+DEVICE_DIR="${BASH_SOURCE%/*}"
+if [[ ! -d "$DEVICE_DIR" ]]; then DEVICE_DIR="$PWD"; fi
+export DEVICE_DIR
 
+export IS_COMMON=true
+export GUARDED_DEVICES="jasmine_sprout wayne"
+
+# Required!
+export DEVICE=wayne-common
 export DEVICE_BRINGUP_YEAR=2018
 
-GOODIX="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib64/libgf_ca.so
-sed -i "s|/system/etc/firmware|/vendor/firmware\x0\x0\x0\x0|g" $GOODIX
+DEVICE_COMMON=sdm660-common
+VENDOR=xiaomi
 
 "./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"
