@@ -17,11 +17,18 @@
 
 set -e
 
-# Required!
-export DEVICE=jasmine_sprout
-export DEVICE_COMMON=sdm660-common
-export VENDOR=xiaomi
+DEVICE_DIR="${BASH_SOURCE%/*}"
+if [[ ! -d "$DEVICE_DIR" ]]; then DEVICE_DIR="$PWD"; fi
+export DEVICE_DIR
 
+export IS_COMMON=true
+export GUARDED_DEVICES="jasmine_sprout wayne"
+
+# Required!
+export DEVICE=wayne-common
 export DEVICE_BRINGUP_YEAR=2018
+
+DEVICE_COMMON=sdm660-common
+VENDOR=xiaomi
 
 "./../../${VENDOR}/${DEVICE_COMMON}/setup-makefiles.sh" "$@"
