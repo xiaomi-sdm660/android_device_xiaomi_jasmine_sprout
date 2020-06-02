@@ -80,6 +80,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.eyecare.brightness.level=8 \
     ro.hist.brightness.threshold=5 \
     vidc.enc.dcvs.extra-buff-count=2 \
+    persist.vendor.delta_time.enable=true
 
 # Dual SIM
 PRODUCT_PROPERTY_OVERRIDES += \
