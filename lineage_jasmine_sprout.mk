@@ -40,3 +40,7 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_NAME := lineage_jasmine_sprout
 PRODUCT_DEVICE := jasmine_sprout
 PRODUCT_MODEL := Mi A2
+
+# OFFICIAL MALLUOS Build
+
+export MALLUOS_BUILDTYPE = OFFICIAL
