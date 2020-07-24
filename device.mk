@@ -29,6 +29,7 @@ DEVICE_PATH := device/xiaomi/jasmine_sprout
 
 # A/B
 ENABLE_AB := true
+AB_OTA_UPDATER := true
 
 # APEX
 ENABLE_APEX := true
