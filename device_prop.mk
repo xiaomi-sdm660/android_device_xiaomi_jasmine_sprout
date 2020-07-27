@@ -88,7 +88,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # DPI
 PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.display.lcd_density=430
+    vendor.display.lcd_density=480
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
