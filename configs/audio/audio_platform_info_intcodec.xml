@@ -122,7 +122,6 @@
         <device name="SND_DEVICE_IN_CAPTURE_FM" acdb_id="0"/>
         <device name="SND_DEVICE_IN_HANDSET_MIC_NS" acdb_id="533"/>
         <device name="SND_DEVICE_IN_VOICE_REC_MIC_NS" acdb_id="533"/>
-        <device name="SND_DEVICE_IN_HANDSET_DMIC_STEREO" acdb_id="2069"/>
         <device name="SND_DEVICE_IN_VOICE_SPEAKER_TMIC" acdb_id="295"/>
         <device name="SND_DEVICE_IN_VOICE_USB_HEADSET_MIC" acdb_id="357"/>
         <device name="SND_DEVICE_OUT_SPEAKER_EXTERNAL_1" acdb_id="14"/>
