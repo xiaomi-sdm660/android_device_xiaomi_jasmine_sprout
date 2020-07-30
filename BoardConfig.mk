@@ -48,9 +48,7 @@ VENDOR_SECURITY_PATCH := 2020-04-05
 # WLAN MAC
 WLAN_MAC_SYMLINK := true
 
--include device/twrp/jasmine_sprout/twrp.mk
-
 # TWRP Support
 ifeq ($(BUILD_TWRP),true)
-include $(DEVICE_PATH)/twrp.mk
+-include recovery/twrp/xiaomi/jasmine_sprout/twrp.mk
 endif
