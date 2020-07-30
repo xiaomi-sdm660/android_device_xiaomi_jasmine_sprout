@@ -94,3 +94,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.iwlan.enable=true \
     persist.vendor.radio.data_con_rprt=1
+    
+# Maintainer prop
+PRODUCT_PROPERTY_OVERRIDES += \
+    org.evolution.build_maintainer=OdSazib \
+    org.evolution.build_support_url=https://t.me/EvolutionXJasmine_Sprout \
+    org.evolution.build_donate_url=https://www.paypal.me/belhodu
