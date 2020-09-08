@@ -1,29 +1,44 @@
 [
- {
-   "remote": "github",
-   "repository": "PixelExperience-Devices/device_xiaomi_sdm660-common",
-   "target_path": "device/xiaomi/sdm660-common",
-   "branch": "ten"
- },
- {
-   "remote": "github",
-   "repository": "PixelExperience-Devices/android_kernel_xiaomi_sdm660",
-   "target_path": "kernel/xiaomi/sdm660",
-   "branch": "ten"
- },
- {
-   "remote": "github",
-   "repository": "PixelExperience-Devices/vendor_xiaomi",
-   "target_path": "vendor/xiaomi",
-   "branch": "ten"
- },
- {
-   "remote": "github",
-   "repository": "xiaomi-sdm660/android_vendor_xiaomi_MiuiCamera",
-   "target_path": "vendor/xiaomi/MiuiCamera",
-   "branch": "lineage-17.0"
- },
- {
+  {
+    "repository": "device_xiaomi_wayne-common",
+    "target_path": "device/xiaomi/wayne-common",
+    "branch": "ten"
+  },
+  {
+    "repository": "device_xiaomi_sdm660-common",
+    "target_path": "device/xiaomi/sdm660-common",
+    "branch": "ten"
+  },
+  {
+    "remote": "pixel-devices-bitbucket",
+    "repository": "vendor_xiaomi_jasmine_sprout",
+    "target_path": "vendor/xiaomi/jasmine_sprout",
+    "branch": "ten"
+  },
+  {
+    "remote": "pixel-devices-bitbucket",
+    "repository": "vendor_xiaomi_sdm660-common",
+    "target_path": "vendor/xiaomi/sdm660-common",
+    "branch": "ten"
+  },
+  {
+    "remote": "pixel-devices-bitbucket",
+    "repository": "vendor_xiaomi_wayne-common",
+    "target_path": "vendor/xiaomi/wayne-common",
+    "branch": "ten"
+  },
+  {
+    "repository": "pixelexperience-devices/kernel_xiaomi_sdm660",
+    "target_path": "kernel/xiaomi/sdm660",
+    "branch": "ten"
+  },
+  {
+    "remote": "github",
+    "repository": "aosip-devices/vendor_dirac",
+    "target_path": "vendor/dirac",
+    "branch": "ten"
+  },
+  {
     "repository": "packages_apps_PixelLiveWallpaper",
     "target_path": "packages/apps/PixelLiveWallpaper",
     "branch": "ten",
