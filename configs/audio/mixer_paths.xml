@@ -545,6 +545,7 @@
     </path>
     <path name="deep-buffer-playback speaker">
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia1" value="1" />
+        <ctl name="INT0_MI2S_RX Audio Mixer MultiMedia1" value="1" />
     </path>
 
     <path name="deep-buffer-playback speaker-protected">
@@ -643,7 +644,7 @@
     </path>
     <path name="low-latency-playback speaker">
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia5" value="1" />
-        <ctl name="TFA Profile" value="ringtone" />
+        <ctl name="INT0_MI2S_RX Audio Mixer MultiMedia5" value="1" />
     </path>
 
     <path name="low-latency-playback speaker-protected">
@@ -852,6 +853,7 @@
     </path>
     <path name="compress-offload-playback speaker">
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia4" value="1" />
+        <ctl name="INT0_MI2S_RX Audio Mixer MultiMedia4" value="1" />
     </path>
 
     <path name="compress-offload-playback speaker-protected">
@@ -2185,16 +2187,13 @@
 
     <!-- These are actual sound device specific mixer settings -->
 
-    <!-- Elclark -->
+    <!-- Stereo Mod -->
     <path name="stereomod">
         <ctl name="INT0_MI2S_RX Channels" value="Two" />
         <ctl name="RX1 MIX1 INP1" value="RX1" />
         <ctl name="RDAC2 MUX" value="RX1" />
-        <ctl name="RX2 Digital Volume" value="94" />
         <ctl name="EAR PA Gain" value="POS_6_DB" />
         <ctl name="EAR_S" value="Switch" />
-        <!--ctl name="HPHL" value="19" />
-        <ctl name="HPHR" value="15" /-->
     </path>
 
     <path name="adc1">
@@ -2492,7 +2491,6 @@
     </path>
 
     <path name="handset">
-    	<ctl name="INT0_MI2S_RX SampleRate" value="KHZ_96" />
         <ctl name="RX1 MIX1 INP1" value="RX1" />
         <ctl name="RDAC2 MUX" value="RX1" />
         <ctl name="RX1 Digital Volume" value="84" />
