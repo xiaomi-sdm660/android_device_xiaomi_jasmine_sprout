@@ -106,9 +106,9 @@ $(call inherit-product, build/target/product/verity.mk)
 # Vendor files
 $(call inherit-product, vendor/xiaomi/wayne-common/wayne-common-vendor.mk)
 
-# AOSP DEVICE
-PRODUCT_NAME := aosp_jasmine_sprout
+# DEVICE
+PRODUCT_NAME := awaken_jasmine_sprout
 PRODUCT_DEVICE := jasmine_sprout
-PRODUCT_MODEL := Mi A2 (AOSP)
+PRODUCT_MODEL := Mi A2
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
