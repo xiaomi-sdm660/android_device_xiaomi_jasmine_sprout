@@ -866,6 +866,10 @@ vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc
 vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so
 vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
 
+# Sensors - from LA.UM.8.2.r1-06700-sdm660.0
+vendor/lib/sensors.ssc.so
+vendor/lib64/sensors.ssc.so
+
 # Thermal (Configs)
 vendor/etc/thermal-engine-battery.conf
 vendor/etc/thermal-engine-battery2.conf
