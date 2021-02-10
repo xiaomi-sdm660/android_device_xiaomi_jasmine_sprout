@@ -33,9 +33,6 @@ ENABLE_AB := true
 # APEX
 ENABLE_APEX := true
 
-# POWERHINT VARIANT
-EAS_POWERHINT_VARIANT := sdm660
-
 # Audio
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/audio/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec.xml \
