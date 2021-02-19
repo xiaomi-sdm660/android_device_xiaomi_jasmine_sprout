@@ -869,12 +869,3 @@ vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
 # Sensors - from LA.UM.8.2.r1-07400-sdm660.0
 vendor/lib/sensors.ssc.so
 vendor/lib64/sensors.ssc.so
-
-# Thermal (Configs)
-vendor/etc/thermal-engine-battery.conf
-vendor/etc/thermal-engine-battery2.conf
-vendor/etc/thermal-engine-gameing.conf
-vendor/etc/thermal-engine-performance.conf
-vendor/etc/thermal-engine-map.conf
-vendor/etc/thermal-engine-default.conf
-vendor/etc/thermal-engine.conf
