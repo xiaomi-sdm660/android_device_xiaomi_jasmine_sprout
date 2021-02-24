@@ -42,6 +42,9 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 # Platform
 BOARD_VENDOR_PLATFORM := xiaomi-sdm660
 
+# Screen density
+TARGET_SCREEN_DENSITY := 420
+
 # Vendor Security patch level
 VENDOR_SECURITY_PATCH := 2020-04-05
 
