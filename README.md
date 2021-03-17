@@ -1,4 +1,3 @@
-Copyright (C) 2018 Xiaomi-SDM660 Project
 
 The MI A2 (codenamed _"jasmine_sprout"_) is a mid-range phone from Xiaomi.
 
@@ -23,3 +22,23 @@ Front Camera   | 20 MP
 ## Device picture
 
 ![Xiaomi MI 6X](https://img.staticbg.com/thumb/large/oaupload/banggood/images/90/CB/781c0a93-de94-4010-86c8-5b9f846f4aa4.jpg "Xiaomi MI A2")
+
+## Copyright
+
+```
+#
+# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2018-2021 Xiaomi-SDM660 Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#

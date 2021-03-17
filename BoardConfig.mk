@@ -1,4 +1,5 @@
 #
+# Copyright (C) 2018 The LineageOS Project
 # Copyright (C) 2018 The Xiaomi-SDM660 Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,37 +22,18 @@
 # definition file).
 #
 
-include device/xiaomi/sdm660-common/BoardConfigCommon.mk
+include device/xiaomi/wayne-common/BoardConfigCommon.mk
 
 # Device Path
 DEVICE_PATH := device/xiaomi/jasmine_sprout
 
-# Crypto
-TARGET_HW_DISK_ENCRYPTION := true
-
-# DT2W
-TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
-
-# Kernel
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
-TARGET_KERNEL_CONFIG := wayne_defconfig
-
 # Manifest
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
-# Platform
-BOARD_VENDOR_PLATFORM := xiaomi-sdm660
-
-# Screen density
-TARGET_SCREEN_DENSITY := 420
-
-# Vendor Security patch level
-VENDOR_SECURITY_PATCH := 2020-08-05
-
-# WLAN MAC
-WLAN_MAC_SYMLINK := true
+# Properties
+TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 
 # TWRP Support
-ifeq ($(BUILD_TWRP),true)
+ifeq ($(BUILD_TWRP), true)
 -include recovery/twrp/xiaomi/jasmine_sprout/twrp.mk
 endif

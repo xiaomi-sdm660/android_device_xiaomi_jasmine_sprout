@@ -1,8 +1,0 @@
-prebuilt_etc {
-    name: "init.device.rc",
-
-    src: "etc/init.device.rc",
-    sub_dir: "init/hw",
-    proprietary: true,
-
-}
