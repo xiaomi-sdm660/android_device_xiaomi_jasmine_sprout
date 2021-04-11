@@ -30,6 +30,9 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
+#TWRP
+include recovery/twrp/xiaomi/jasmine_sprout/twrp.mk
+
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
